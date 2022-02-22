@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="paginamestra.master.cs" Inherits="projetoalternativo.paginamestra" %>
+
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>my layout</title>  
+    <link rel="stylesheet" type="text/css" href="css/FolhaDeEstilos.css">  
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+      <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+
+</head>  
+<body>
+
+    <a id="top"></a>
+
+    <div class="wrap">
+
+        <header>
+            <div class="header">
+                <a href="/home.aspx" title="Página incial"><img id="logo" src="img/logocolorido.png" alt="My.Docs.App Logo"></a>
+            
+                <a href="#menu" id="menuToggle" title="Mostra menu"><i class="fas fa-fw fa-ellipsis-v"></i></a>
+            </div>
+        </header>
+
+        <nav>
+               
+
+            <div id="mainMenu" class="nav menu-closed">
+                <a href="/home.aspx" title="Página incial">
+                    <i class="fas fa-home fa-fw"></i><span>Início</span>
+                </a>
+                <a href="/manager.aspx" title="Gerenciar documentos">
+                    <i class="fas fa-file-alt fa-fw"></i><span>Gerenciar</span>
+                </a>
+                <a href="/send.aspx" title="Enviar novo documento">
+                    <i class="fas fa-file-upload fa-fw"></i><span>Enviar</span>
+                </a>
+                <a href="/contacts.aspx" title="Faça contato">
+                    <i class="fas fa-comments fa-fw"></i><span>Contatos</span>
+                </a>
+                <a href="/About.aspx" title="Sobre o App">
+                    <i class="fas fa-info-circle fa-fw"></i><span>Sobre</span>
+                </a>
+                <a href="/profile.aspx" title="Seu perfil">
+                    <i class="fas fa-user fa-fw"></i><span>Perfil</span>
+                </a>
+            </div>
+               
+        </nav>
+
+   <table>
+
+   <tr>
+
+      <td  id="blocao" ;style="text-align:center" >
+
+          <div style="width: 1025px; margin-left: 285px; background-color:greenyellow;">
+
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                 </asp:ContentPlaceHolder>
+
+          </div>
+
+      </td>
+
+    </tr>
+
+</table>
+       
+
+        <footer>
+
+            <div class="footer">
+
+                <div class="footer-top">
+                    <a href="/home.aspx" title="Página incial"><i class="fas fa-home fa-fw"></i></a>
+                    <div class="license"><i class="fab fa-creative-commons fa-fw"></i> 2021 Made in Files</div>
+                    <a href="#top" title="Topo da página"><i class="fas fa-arrow-alt-circle-up fa-fw"></i></a>
+                </div>
+
+                <div class="footer-bottom">
+
+                    <div class="social"></div>
+
+                    <div class="tools">
+                        <a href="/About.aspx" title="Sobre o App">
+                            <i class="fas fa-info-circle fa-fw"></i><span>Sobre o app</span>
+                        </a>
+                        <a href="/About.aspx" title="Sobre agente">
+                            <i class="fas fa-user-tie fa-fw"></i><span>Sobre agente</span>
+                        </a>
+                        <a href="/contacts.aspx" title="Faça contato">
+                            <i class="fas fa-comments fa-fw"></i><span>Contatos</span>
+                        </a>
+                        <a href="privacity" title="Políticas de privacidade">
+                            <i class="fas fa-lock fa-fw"></i><span>Privacidade</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+</body> 
+</html> 
