@@ -72,6 +72,7 @@
     <Content Include="css\FolhaDeEstilos.css" />
     <Content Include="home.aspx" />
     <Content Include="img\logocolorido.png" />
+    <Content Include="index.aspx" />
     <Content Include="manager.aspx" />
     <Content Include="profile.aspx" />
     <Content Include="send.aspx" />
@@ -98,6 +99,13 @@
     </Compile>
     <Compile Include="home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="manager.aspx.cs">
       <DependentUpon>manager.aspx</DependentUpon>
